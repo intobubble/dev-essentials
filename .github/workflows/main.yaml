@@ -3,7 +3,7 @@ on: [push]
 jobs:
   install:
     runs-on: ubuntu-latest
-    container: debian:latest
+    # container: debian:latest
     steps:
       - name: execute `install.sh`
         run: ls -la
