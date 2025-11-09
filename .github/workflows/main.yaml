@@ -12,7 +12,9 @@ jobs:
         run: bash ./install.sh
 
       - name: check path `go`
-        run: which go 2>/dev/null || exit 2
+        run: |
+          source ~/.bashrc \
+          && which go 2>/dev/null || exit 2
 
       - name: check path `task`
         run: which task 2>/dev/null || exit 2
