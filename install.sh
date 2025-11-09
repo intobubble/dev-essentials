@@ -36,6 +36,7 @@ install_go_task() {
 }
 
 install_gitleaks() {
+    source ~/.bashrc
     git clone  --depth 1 --branch "v${GITLEAKS_VERSION}" https://github.com/gitleaks/gitleaks.git\
         && cd gitleaks \
         && make build \
