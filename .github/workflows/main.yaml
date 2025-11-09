@@ -1,5 +1,11 @@
 name: "main"
 on: [push]
+
+defaults:
+  run:
+    shell: bash
+    working-directory: .
+
 jobs:
   install:
     runs-on: ubuntu-latest
