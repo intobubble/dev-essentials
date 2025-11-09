@@ -1,0 +1,21 @@
+// For format details, see https://containers.dev/implementors/json_reference/.
+{
+    "name": "dev-essentials-all",
+    "dockerComposeFile": "compose.yaml",
+    "service": "all",
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [],
+    "postCreateCommand": "bash ./install.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "eamodio.gitlens",
+                "mhutchie.git-graph",
+                "usernamehw.errorlens",
+                "timonwong.shellcheck",
+                "EditorConfig.EditorConfig"
+            ]
+        }
+    }
+}

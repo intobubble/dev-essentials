@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "usernamehw.errorlens",
+        "timonwong.shellcheck",
+        "github.vscode-github-actions",
+        "redhat.vscode-yaml",
+        "EditorConfig.EditorConfig"
+    ]
+}
