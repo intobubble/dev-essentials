@@ -6,16 +6,16 @@ jobs:
     container: debian:latest
     steps:
       - name: execute `install.sh`
-        run: bash ./install.sh
+        run: ls -la
 
-      - name: check go path
+      - name: check path `go`
         run: which go 2>/dev/null || exit 2
 
-      - name: check go-task path
+      - name: check path `task`
         run: which task 2>/dev/null || exit 2
 
-      - name: check gitleaks path
+      - name: check path `gitleaks`
         run: which gitleaks 2>/dev/null || exit 2
 
-      - name: check trivy path
+      - name: check path `trivy`
         run: which trivy 2>/dev/null || exit 2
